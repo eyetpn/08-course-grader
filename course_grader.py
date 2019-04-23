@@ -1,14 +1,14 @@
 def average(n):
     ave = sum(n)/ len (n)
     return ave
-average 
+ 
 def course_grader(test_scores):
-    # Your code here
-    if average (test_scores) >= 70:
-        #if test_scores > 49:
-        return ("pass")
-    elif average (test_scores) < 70 and test_scores < 50:
-        print( "fail")
+    #grade = ""
+    mean = average (test_scores)
+    if mean >= 70 and min(test_scores) >50:
+        return("pass")
+    else:
+        return ("fail")
     
 def main():
     print(course_grader([100,75,45]))     # "fail"
